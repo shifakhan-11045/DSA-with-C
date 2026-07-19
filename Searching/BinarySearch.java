@@ -6,19 +6,22 @@ public class BinarySearch
         int li = 0;
         int hi = arr.length-1;
         int element = 40;
+       
         while(li <= hi)
         {
             int mid = (li + hi)/2;
             if(arr[mid] == element)
             {
-                System.out.println("Element found at index = "+arr[mid]);
+                System.out.println("Element found at index = "+mid);
                 break;
             }
             if(element > arr[mid])
             {
                 li = mid + 1;
-                hi = mid - 1;
+               
             }
+            else
+                 hi = mid - 1;
         }
         
     }
